@@ -1,0 +1,10 @@
+[workspace]
+authors = ["Rob Timpe <rtimpe@openteams.com>"]
+channels = ["conda-forge", "nodefaults"]
+name = "pytorch-scratch"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[dependencies]
+python = "*"
+pip = "*"
