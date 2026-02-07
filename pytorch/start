@@ -1,0 +1,4 @@
+docker run -it -v /home/rob/code/pytorch:/code/pytorch \
+  -v /home/rob/code/scratch/pytorch/claude:/home/rtimpe/.claude \
+  --mount type=bind,source="$(pwd)"/.claude.json,target=/home/rtimpe/.claude.json \
+  -u 1092 --name claude claude
