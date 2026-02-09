@@ -1,4 +1,6 @@
-docker run -it -v /home/rob/code/pytorch:/code/pytorch \
-  -v /home/rob/code/scratch/pytorch/claude:/home/rtimpe/.claude \
-  --mount type=bind,source="$(pwd)"/.claude.json,target=/home/rtimpe/.claude.json \
-  -u 1092 --name claude claude
+docker run -it \
+  -v /home/rtimpe/git/pytorch-313:/home/rtimpe/git/pytorch-313 \
+  -v /home/rtimpe/git/torch-build:/home/rtimpe/git/torch-build \
+  -v /home/rtimpe/git/scratch/pytorch/claude:/home/rtimpe/.claude \
+  --mount type=bind,source=/home/rtimpe/git/scratch/pytorch/.claude.json,target=/home/rtimpe/.claude.json \
+  -u 1092 --rm --name rtimpe-claude rtimpe-claude
