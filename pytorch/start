@@ -1,4 +1,5 @@
 docker run -it \
+  -v /home/rtimpe/git/pytorch:/home/rtimpe/git/pytorch \
   -v /home/rtimpe/git/pytorch-313:/home/rtimpe/git/pytorch-313 \
   -v /home/rtimpe/git/torch-build:/home/rtimpe/git/torch-build \
   -v /home/rtimpe/git/scratch/pytorch/claude:/home/rtimpe/.claude \
