@@ -1,3 +1,4 @@
+# build with `docker build . -t rtimpe-claude`
 FROM ubuntu:24.04
 
 RUN apt update -y && apt upgrade -y
