@@ -5,10 +5,10 @@ RUN apt update -y && apt upgrade -y
 
 RUN apt install -y git curl sudo python3 build-essential
 
-RUN useradd -u 1092 -G sudo -s /bin/bash -m rtimpe
+RUN groupadd rtimpe --gid 1097 && useradd -u 1092 -g 1097 -G sudo -s /bin/bash -m rtimpe
 
 # userid on qgpu
-USER 1092:1092
+USER 1092
 
 RUN curl -fsSL https://claude.ai/install.sh | bash
 
