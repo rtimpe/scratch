@@ -1,4 +1,6 @@
 docker run -it \
+  -v /home/rtimpe/git/scratch/pytorch/transformers:/home/rtimpe/git/scratch/pytorch/transformers \
+  -v /home/rtimpe/git/compile-graph-break-site/:/home/rtimpe/git/compile-graph-break-site/ \
   -v /home/rtimpe/git/pytorch:/home/rtimpe/git/pytorch \
   -v /home/rtimpe/git/pytorch-313:/home/rtimpe/git/pytorch-313 \
   -v /home/rtimpe/git/pytorch-315:/home/rtimpe/git/pytorch-315 \
