@@ -16,3 +16,6 @@ RUN curl -fsSL https://pixi.sh/install.sh | sh
 
 # add claude and pixi to path
 RUN echo export PATH="$HOME/.local/bin:$HOME/.pixi/bin:$PATH" > "$HOME/.bashrc"
+
+# install uv, mostly for convenience with the `skills` repo
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
