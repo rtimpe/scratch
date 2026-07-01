@@ -8,6 +8,9 @@ version = "0.1.0"
 [system-requirements]
 cuda = "13.1"
 
+[activation.env]
+HF_HUB_CACHE = "/space_ssd/rtimpe/.cache/huggingface/hub/"
+
 [dependencies]
 python = "*"
 pip = "*"
