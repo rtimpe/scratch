@@ -1,5 +1,6 @@
 # build with `docker build . -t rtimpe-claude`
-FROM ubuntu:24.04
+# see https://gitlab.com/nvidia/container-images/cuda/blob/master/doc/supported-tags.md for more tags
+FROM nvidia/cuda:13.1.2-cudnn-runtime-ubuntu24.04
 
 RUN apt update -y && apt upgrade -y
 
