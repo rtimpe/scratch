@@ -8,5 +8,6 @@ docker run -it \
   -v /home/rtimpe/git/torch-build:/home/rtimpe/git/torch-build \
   -v /home/rtimpe/git/cpython:/home/rtimpe/git/cpython \
   -v /home/rtimpe/git/scratch/pytorch/claude:/home/rtimpe/.claude \
+  -v /space_ssd/rtimpe:/space_ssd/rtimpe \
   --mount type=bind,source=/home/rtimpe/git/scratch/pytorch/.claude.json,target=/home/rtimpe/.claude.json \
   -u 1092 --rm --name rtimpe-claude rtimpe-claude
