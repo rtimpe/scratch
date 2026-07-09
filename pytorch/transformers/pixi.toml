@@ -15,3 +15,6 @@ transformers = "*"
 pytorch = "*"
 accelerate = "*"
 bitsandbytes = "*"
+
+[pypi-dependencies]
+tlparse = "*"
