@@ -1,5 +1,17 @@
 # Environment
 
-The development environment in ~/git/pytorch is managed by pixi and is called `py314`.  Use `pixi s -e py314` to open a shell in the correct environment.  The pixi environment is defined in `~/git/torch-build`.  Pixi commands need to be run from there.  Do not make changes to that directory.  In ~/git/pytorch-313 the environment is `py313`
+Development environments are managed by pixi, and are defined in `~/git/torch-build`.  Do not make changes to that directory.  See the below table for a mapping of directory to environment name
 
-The environment for ~/git/pytorch-315 is slightly different.  It uses a local (debug) build of cpython.  The cpython source source code is at ~/git/cpython.  The pixi env name is `cpython`
+| Directory | env name |
+|-|-|
+| ~/git/pytorch | py314 |
+| ~/git/pytorch-315 | py315 |
+| ~/git/pytorch-313 | py313 |
+
+There is also a `cpython` environment (currently unused) for development versions of cpython.  Use the `~/git/cpython` directory to read cpython source code, but do not make changes.
+
+`gh` is not installed.  Don't attempt to write to github
+
+# Other
+
+Don't try to run linters unless explicitly asked to.
